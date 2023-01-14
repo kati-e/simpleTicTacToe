@@ -20,37 +20,38 @@ public class Player
         Write("Make your move: ");
         int move = Convert.ToInt32(ReadLine());
 
-        bool valid = isMoveValid(move);
+        bool valid = isMoveValid(move, boardspaces);
 
         while (!valid)
         {
             Write("Try again... ");
             move = Convert.ToInt32(ReadLine());
-            valid = isMoveValid(move);
+            valid = isMoveValid(move, boardspaces);
         }
 
         boardspaces = addMoveToBoard(move, boardspaces);
         return boardspaces;
     }
 
-    // Check if the move is valid
-    public bool isMoveValid(int move)
+    // Checking if move choice is legal based on current board state
+    private bool isMoveValid(int move, string[] boardspaces)
     {
-        bool valid;
+        bool valid = false;
+        string Move = Convert.ToString(move);
 
-        if (move < 1 || move > 9)
+        for (int i = 0; i < boardspaces.Length; i++)
         {
-            valid = false;
-        } else
-        {
-            valid = true;
+            if (boardspaces[i] == Move)
+            {
+                valid = true;
+            } 
         }
 
         return valid;
     }
 
     // Adds the user input into the boardspaces array
-    public string[] addMoveToBoard(int move, string[] boardspaces)
+    private string[] addMoveToBoard(int move, string[] boardspaces)
     {
         for (int i = 0; i < boardspaces.Length; i++)
         {
