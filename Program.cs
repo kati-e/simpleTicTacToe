@@ -5,11 +5,17 @@ class Program
 {
     static void Main()
     {
-        Game tictactoe = new Game();
-        tictactoe.displayBoard();
+        int Move;
+        Game TicTacToe = new Game();
+        TicTacToe.displayBoard();
 
-        Write("Press any key to close: ");
-        ReadKey();
+        Player Player1 = new Player(1, 'X');
+        Player Player2 = new Player(2, 'O');
+
+        Move = Player1.takePlayerMove();
+        WriteLine(Move);
+        //Write("Press any key to close: ");
+        //ReadKey();
     }
 } 
 

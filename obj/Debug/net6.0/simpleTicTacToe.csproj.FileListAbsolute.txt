@@ -1,0 +1,15 @@
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/bin/Debug/net6.0/simpleTicTacToe
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/bin/Debug/net6.0/simpleTicTacToe.deps.json
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/bin/Debug/net6.0/simpleTicTacToe.runtimeconfig.json
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/bin/Debug/net6.0/simpleTicTacToe.dll
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/bin/Debug/net6.0/simpleTicTacToe.pdb
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.csproj.AssemblyReference.cache
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.AssemblyInfoInputs.cache
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.AssemblyInfo.cs
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.csproj.CoreCompileInputs.cache
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.dll
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/refint/simpleTicTacToe.dll
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.pdb
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/simpleTicTacToe.genruntimeconfig.cache
+/Users/katie/Desktop/Csharp Projects/simpleTicTacToe/obj/Debug/net6.0/ref/simpleTicTacToe.dll
