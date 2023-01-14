@@ -48,7 +48,7 @@ public class Game
 
         if (turn == boardspaces.Length)
         {
-            over[0] = "tie";
+            over[0] = "It's a tie!";
             over[1] = "true";
 
         } else if (
@@ -61,7 +61,7 @@ public class Game
          boardspaces[2] == "X" && boardspaces[5] == "X" && boardspaces[8] == "X"
          )
         {
-            over[0] = "Player 1";
+            over[0] = "Player 1 is the winner!";
             over[1] = "true";
 
         } else if (
@@ -74,7 +74,7 @@ public class Game
             boardspaces[2] == "O" && boardspaces[5] == "O" && boardspaces[8] == "O"
             )
         {
-            over[0] = "Player 1";
+            over[0] = "Player 2 is the winner!";
             over[1] = "true";
         } 
 
