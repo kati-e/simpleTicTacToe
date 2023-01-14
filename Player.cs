@@ -30,6 +30,7 @@ public class Player
         }
 
         boardspaces = addMoveToBoard(move, boardspaces);
+
         return boardspaces;
     }
 

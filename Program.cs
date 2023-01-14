@@ -57,13 +57,11 @@ class Program
             }
         }
 
-
         // End Game
         result = endGameConditions[0];
         WriteLine("Results: " + result);
         Write("Press any key to close: ");
         ReadKey();
-
     }
 } 
 
