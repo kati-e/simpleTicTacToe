@@ -1,20 +1,21 @@
 ﻿using System;
 using static System.Console;
 
+//////////////////
+///   PLAYER   ///
+//////////////////
+
 public class Player
 {
-    public int playerNum;
     public char playerPiece;
 
-    // Constructor
-    public Player(int PlayerNum, char PlayerPiece)
+    public Player(char PlayerPiece)
     {
-        playerNum = PlayerNum;
         playerPiece = PlayerPiece;
     }
 
     // Take user input for player's move
-    public int takePlayerMove()
+    public string[] takePlayerMove(string[] boardspaces)
     {
         Write("Make your move: ");
         int move = Convert.ToInt32(ReadLine());
@@ -28,7 +29,8 @@ public class Player
             valid = isMoveValid(move);
         }
 
-        return move;
+        boardspaces = addMoveToBoard(move, boardspaces);
+        return boardspaces;
     }
 
     // Check if the move is valid
@@ -36,7 +38,6 @@ public class Player
     {
         bool valid;
 
-        // first, check if it is within the correct number range for the board spaces.
         if (move < 1 || move > 9)
         {
             valid = false;
@@ -48,4 +49,19 @@ public class Player
         return valid;
     }
 
+    // Adds the user input into the boardspaces array
+    public string[] addMoveToBoard(int move, string[] boardspaces)
+    {
+        for (int i = 0; i < boardspaces.Length; i++)
+        {
+            string Move = Convert.ToString(move);
+            
+            if (boardspaces[i] == Move)
+            {
+                boardspaces[i] = Convert.ToString(playerPiece);
+            }
+        }
+
+        return boardspaces;
+    }
 } 

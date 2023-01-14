@@ -1,31 +1,38 @@
 ﻿using System;
 using static System.Console;
 
+//////////////////
+///    GAME    ///
+//////////////////
+
 public class Game
 {
-    public int[] displayBoard(int boardLength)
+    // Creates the starting game board
+    public string[] buildBoard(string[] boardspaces)
     {
 
-        int[] spaces = new int[boardLength];
-
-        for (int i = 0; i < spaces.Length; i++)
+        for (int i = 0; i < boardspaces.Length; i++)
         {
-            spaces[i] = i + 1;
+            boardspaces[i] = Convert.ToString((i + 1));
         }
 
+        return boardspaces;
+    }
+
+    // Displays game board
+    public void displayBoard(string[] boardspaces)
+    {
         WriteLine("-----------------------------------");
         WriteLine("| Welcome to my simple TicTacToe! |");
         WriteLine("-----------------------------------");
         WriteLine("    Player 1: X    Player 2: O");
         WriteLine("-----------------------------------");
         WriteLine("\n");
-        WriteLine("          " + spaces[0] + "  |  " + spaces[1] + "  |  " + spaces[2] + "       ");
+        WriteLine("          " + boardspaces[0] + "  |  " + boardspaces[1] + "  |  " + boardspaces[2] + "       ");
         WriteLine("         ----------------     ");
-        WriteLine("          " + spaces[3] + "  |  " + spaces[4] + "  |  " + spaces[5] + "       ");
+        WriteLine("          " + boardspaces[3] + "  |  " + boardspaces[4] + "  |  " + boardspaces[5] + "       ");
         WriteLine("         ----------------     ");
-        WriteLine("          " + spaces[6] + "  |  " + spaces[7] + "  |  " + spaces[8] + "       ");
+        WriteLine("          " + boardspaces[6] + "  |  " + boardspaces[7] + "  |  " + boardspaces[8] + "       ");
         WriteLine("\n");
-
-        return spaces;
     }
 }

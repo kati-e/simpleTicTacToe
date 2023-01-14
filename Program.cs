@@ -1,35 +1,37 @@
 ﻿using System;
 using static System.Console;
 
+////////////////////
+/// MAIN PROGRAM ///
+////////////////////
+
 class Program
 {
     static void Main()
     {
-        int Move;
-        int[] boardSpaces = new int[9]; // 9 spaces for the board
+        // Setup
+        string[] boardSpaces = new string[9]; // 9 spaces for the board
 
         Game TicTacToe = new Game();
-        boardSpaces = TicTacToe.displayBoard(boardSpaces.Length);
+        boardSpaces = TicTacToe.buildBoard(boardSpaces);
 
-        Player Player1 = new Player(1, 'X');
-        Player Player2 = new Player(2, 'O');
+        Player Player1 = new Player('X'); 
+        Player Player2 = new Player('O');
 
-        //////////////////
-        /// START GAME ///
-        //////////////////
-        Move = Player1.takePlayerMove();
-        WriteLine(Move);
-        Move = Player2.takePlayerMove();
-        WriteLine(Move);
+        // Start Game
+        TicTacToe.displayBoard(boardSpaces);
+
+        boardSpaces = Player1.takePlayerMove(boardSpaces);
+        TicTacToe.displayBoard(boardSpaces);
+
+        boardSpaces = Player2.takePlayerMove(boardSpaces);
+        TicTacToe.displayBoard(boardSpaces);
 
 
-
-        //////////////////
-        ///  END GAME  ///
-        //////////////////
-
-        //Write("Press any key to close: ");
-        //ReadKey();
+        // End Game
+        WriteLine("\n The End.");
+        Write("Press any key to close: ");
+        ReadKey();
     }
 } 
 
