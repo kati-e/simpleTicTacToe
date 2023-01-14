@@ -37,7 +37,7 @@ public class Player
         bool valid;
 
         // first, check if it is within the correct number range for the board spaces.
-        if (move < 1 || move > 8)
+        if (move < 1 || move > 9)
         {
             valid = false;
         } else

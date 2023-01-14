@@ -3,10 +3,10 @@ using static System.Console;
 
 public class Game
 {
-    public void displayBoard()
+    public int[] displayBoard(int boardLength)
     {
 
-        int[] spaces = new int[9]; // 9 spaces on the board
+        int[] spaces = new int[boardLength];
 
         for (int i = 0; i < spaces.Length; i++)
         {
@@ -25,5 +25,7 @@ public class Game
         WriteLine("         ----------------     ");
         WriteLine("          " + spaces[6] + "  |  " + spaces[7] + "  |  " + spaces[8] + "       ");
         WriteLine("\n");
+
+        return spaces;
     }
 }
